@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Download AZip Installer</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    text-align: center;
+    margin: 0;
+    padding: 50px;
+  }
+  h1 {
+    color: #0066cc;
+  }
+  button {
+    background-color: #0066cc;
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+  }
+  button:hover {
+    background-color: #004c99;
+  }
+</style>
+</head>
+<body>
+
+<h1>Download AZip Installer</h1>
+<p>Click the button below to download and install AZip:</p>
+
+<button id="downloadBtn">Download Installer (.msi) For Windows</button>
+<button id="downloadBtnexe">Download Installer (.exe) For Windows</button>
+
+<script>
+document.getElementById("downloadBtn").addEventListener("click", () => {
+    // Link directly to the MSI in the same folder
+    window.location.href = "AzipInstaller.msi";
+});
+
+document.getElementById("downloadBtnexe").addEventListener("click", () => {
+    // Link directly to the EXE in the same folder
+    window.location.href = "AzipInstaller.exe";
+});
+</script>
+
+</body>
+</html>
